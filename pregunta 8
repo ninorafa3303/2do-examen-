@@ -1,0 +1,16 @@
+def ordenamiento(lista):
+    for i in range(1, len(lista)):  
+        if lista[i] < lista[i-1]:
+            reubicar(lista, i)
+        print("iDEBUG: ", lista)
+
+def reubicar(lista, p):
+    v = lista[p]
+    j = p
+   
+    while j > 0 and v < lista[j-1]:
+        lista[j] = lista[j-1]
+        print("rDEBUG: ", lista)  # Mostrar cómo se mueven los elementos
+        j -= 1
+
+    lista[j] = v
