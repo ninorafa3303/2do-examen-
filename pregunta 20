@@ -1,0 +1,7 @@
+def busqueda(lista, x):
+    i = 0 
+    for z in lista:
+        if z == x:
+            return i
+        i += 1
+    return -1
