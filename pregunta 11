@@ -1,0 +1,12 @@
+def ordenamiento (lista)
+    for i in range(len(lista)): 
+        print('DEBUG: FOR del i= ', i)
+        for j in range(i+1, len(lista)): 
+
+            print ('DEBUG: FOR del j= ', j)
+if lista[i] > lista[j]:
+
+                lista[i], lista[j] = lista[j], lista[i]
+                print('DEBUG: ', lista)
+        
+        print('--------- FIN J, PROXIMO I ---------')
